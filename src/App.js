@@ -24,7 +24,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <p className="Advice">{this.state.advice || "…"}</p>
-        <ShowOtherAdviceButton />
+        <ShowOtherAdviceButton className="Advice-other-advice-button" onClick={this.loadAdvice}/>
       </div>
     );
   }
